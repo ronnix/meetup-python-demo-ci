@@ -1,0 +1,14 @@
+version: 2
+jobs:
+  projet:
+    steps:
+      - checkout
+      - run:
+          name: Install Python deps in a venv
+          command: |
+            sudo pip install pipenv==2018.05.18
+            pipenv install --dev
+      - run:
+          name: Run tests
+          command: |
+            pipenv run pytest -vv
