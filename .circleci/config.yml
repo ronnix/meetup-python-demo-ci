@@ -19,6 +19,10 @@ jobs:
           command: |
             pipenv run flake8
       - run:
+          name: Check type annotations with mypy
+          command: |
+            pipenv run mypy projet.py
+      - run:
           name: Run tests
           command: |
             mkdir -p test-reports/

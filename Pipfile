@@ -7,10 +7,15 @@ name = "pypi"
 pytest-cov = "*"
 "flake8" = "*"
 black = "*"
+mypy = "*"
 
 [dev-packages]
 pytest = "*"
 black = "==18.6b4"
+mypy = "*"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
