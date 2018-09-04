@@ -6,9 +6,11 @@ name = "pypi"
 [packages]
 pytest-cov = "*"
 "flake8" = "*"
+black = "*"
 
 [dev-packages]
 pytest = "*"
+black = "==18.6b4"
 
 [requires]
 python_version = "3.6"
