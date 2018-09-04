@@ -15,3 +15,5 @@ jobs:
           command: |
             mkdir -p test-reports/
             pipenv run pytest --cov=projet -vv projet.py --junitxml=test-reports/junit.xml
+      - store_test_results:
+          path: test-reports
